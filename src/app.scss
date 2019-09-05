@@ -1,0 +1,57 @@
+$levender: #f4cbff;
+
+header{
+  font-size:2em; 
+  border: .5em solid fuchsia;
+  border-radius: 2em;
+  background-color: $levender;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+h4{
+  border: .10em solid deeppink;
+  border-radius: 2em;
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  margin: .5em;
+  margin-bottom: 0.5em;
+
+}
+h4:hover {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color:lavenderblush;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+ 
+}
+
+button{
+  font-size: 2em;  
+  display: flex;
+  justify-content: center;
+ 
+}
+#add{
+  margin-left: 6em;
+  margin-bottom: 1em;
+}
+#sub{
+  margin-left:5em;
+}
+button:hover{
+  background-color: plum;
+  
+}
+footer{
+  display: flex;
+  justify-content: center;
+  padding-top: 3em; 
+}

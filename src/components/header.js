@@ -1,12 +1,12 @@
-import React from "react";
 
+import React from "react";
 import "../app.scss";
 
 class Header extends React.Component {
   render() {
     return (
       <header>
-        <h1>Header</h1>
+        <h1>Hello!</h1>
       </header>
     );
   }

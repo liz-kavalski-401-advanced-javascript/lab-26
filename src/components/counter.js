@@ -1,7 +1,6 @@
+
 import React from "react";
-
 import "../app.scss";
-
 
 class Counter extends React.Component {
   constructor(props) {
@@ -11,17 +10,27 @@ class Counter extends React.Component {
     };
   }
 
-  handleButtonClick = e => {
+  increaseUp = e => {
     e.preventDefault();
     let counter = this.state.counter + 1;
     this.setState({ counter });
   };
 
+  decreaseDown = e => {
+    e.preventDefault();
+    let counter = this.state.counter - 1;
+    this.setState({ counter });
+  };
   render() {
     return (
       <div>
+        <button id="add" onClick={this.increaseUp}>
+          Click Me to Add
+        </button>
         <h4>{this.state.counter}</h4>
-        <button onClick={this.handleButtonClick}>Click Me</button>
+        <button id="sub" onClick={this.decreaseDown}>
+          Click Me to Subtract
+        </button>
       </div>
     );
   }
