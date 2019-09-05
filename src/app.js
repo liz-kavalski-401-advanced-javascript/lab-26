@@ -4,7 +4,10 @@ import Header from "./components/header.js";
 import Footer from "./components/footer.js";
 import Counter from "./components/counter.js";
 
+
 import "./app.scss";
+
+
 
 class App extends React.Component {
   render() {
