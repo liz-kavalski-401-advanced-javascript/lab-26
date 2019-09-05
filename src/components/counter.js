@@ -23,7 +23,7 @@ class Counter extends React.Component {
   };
   render() {
     return (
-      <div>
+      <span>
         <button id="add" onClick={this.increaseUp}>
           Click Me to Add
         </button>
@@ -31,9 +31,10 @@ class Counter extends React.Component {
         <button id="sub" onClick={this.decreaseDown}>
           Click Me to Subtract
         </button>
-      </div>
+      </span>
     );
   }
 }
 
 export default Counter;
+
